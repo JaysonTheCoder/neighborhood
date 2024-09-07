@@ -1,0 +1,28 @@
+
+.blob {
+    border-radius: var(--radius-1) var(--radius-2) var(--radius-3) var(--radius-4) / var(--radius-5) var(--radius-6) var(--radius-7) var(--radius-8);
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, var(--french-violet) 90%);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .3); */
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    animation-play-state: running;
+    animation: autoAnimate;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    width: 35%;
+    height: 75%;
+}
+.landing-definition .landing-illustration {
+    position: relative;
+    z-index: 3;
+    width: 30%;
+    min-width: 260px;
+}
+.landing-definition .landing-illustration img{
+    width: 100%;
+    height: 100%;
+}
+a { text-decoration: none; color: #000}

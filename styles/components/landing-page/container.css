@@ -1,0 +1,31 @@
+
+.container {
+    height: var(--height-container);
+    background-color: var(--columbia-blue);
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.container::-webkit-scrollbar {
+    background-color: var(--heliotrope);
+    width: 10px;
+}
+.container::-webkit-scrollbar-thumb {
+    background-color: var(--mauve);
+    border-radius: 10px;
+}
+.container::-webkit-scrollbar-track {
+    background-color: var(--mauve);
+}
+
+.landing-screen {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--russian-violet);
+    color: var(--columbia-blue);
+    font-family: "Poppins-Regular";
+    letter-spacing: 1px;
+}

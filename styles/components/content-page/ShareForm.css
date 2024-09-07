@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container-shareform {
+    background-color: #00000090;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 4;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.share-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 600px;
+    height: 400px;
+    box-shadow: 0 0 50px 0 #00000090;
+    border-radius: 8px;
+    flex-direction: column;
+    font-family: "Roboto-Regular";
+}
+@media (width <= 500px) {
+    .share-form {
+        height: 570px;
+    }
+}
+.exit-button {
+    width: 95%;
+    display: flex;
+    position: relative;
+    height: 20px;
+    cursor: pointer;
+}
+.exit-button button {
+    all:unset;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+form {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+form div {
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+    flex-direction: column;
+}
+.submit-shareform-button {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit-shareform-button button{
+    width: 100%;
+    height: 50px;
+    background-color: var(--russian-violet);
+    border-radius: 5px;
+    color: #f9f9f9;
+
+}
+.inputs label {
+    font-size: 12px;
+}
+#text-only {
+    all: unset;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 5px;
+}
+.inputs input {
+    border-radius: 8px;
+    height: 30px;
+    border: 1px solid #00000005;
+    background-color: #00000010;
+    margin-top: 5px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.inputs input:focus,
+.inputs input:valid {
+    border: 1px solid var(--persian-indigo);
+}

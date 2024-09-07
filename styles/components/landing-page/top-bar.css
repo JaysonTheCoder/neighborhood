@@ -1,0 +1,19 @@
+
+.top-bar {
+    width: 100%;
+    padding: 20px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    animation-play-state: running;
+    animation: nav;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.platform-profile {
+    display: flex;
+    align-items: center;
+}
+.platform-profile img {height: 100%; width: 100%; border-radius: 3px;}
+.logo { height: 35px; width: 35px; margin-left: 100px; margin-right: 10px;}

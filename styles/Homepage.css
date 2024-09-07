@@ -1,0 +1,49 @@
+@import url('./components/content-page/container.css');
+@import url('./components/content-page/left-sidebar.css');
+@import url('./components/content-page/main-content.css');
+@import url('./components/content-page/ShareForm.css');
+@import url('./components/content-page/right-sidebar.css');
+
+
+
+.icon {
+    width: clamp(20px, 1vw, 1rem);
+    height: clamp(20px, 1vw, 1rem);
+    margin-right: 10px;
+}
+@media (width <= 720px) {
+    .left-sidebar {display: none;}  
+    .right-sidebar {
+        display: none;
+    }
+    .main {
+        display: flex;
+    }
+}
+
+@media (width <= 720px) {
+    .list .list-items {
+        grid-template-columns: repeat(auto-fit, minmax(50vw, 80vw));
+        grid-auto-rows: 80vw;
+    }
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(273, 68%, 59%, 0.2);
+    border-radius: 10px;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #00000020;
+}
+
+@keyframes animation-sc {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
